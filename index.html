@@ -16,6 +16,14 @@
                 $('header').slideDown(500);
                 $('header').addClass('active')
             })
+            $('#page1').mouseover(function () {
+                $('header').slideUp(500);
+            })
+            $('#page3').mouseover(function () {
+                $('header').hide();
+                $('header').slideDown(500);
+                $('header').addClass('active');
+            })
         })
     </script>
     <style>
