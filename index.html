@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://img.freepik.com/free-photo/white-blank-background-texture_53876-98165.jpg">
-    <meta property="og:description" content="다재다능한 인재 장혜민 입니다.">
     <meta property="og:title" content="장혜민 포토폴리오 입니다.">
     <title>장혜민 포토폴리오</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +54,19 @@
                 })
                 $('.ps6').css({transform: 'scale(1)'})
            })
-            
+           
+           $('.ps9').mouseover(function(){
+                $('.ps8').css({opacity : '0.5',
+                            transition : '1s'
+                })
+                $('.ps9').css({transform: 'scale(2)', transition : '1s'})
+           })
+           $('.ps9').mouseout(function(){
+                $('.ps8').css({opacity : '1',
+                            transition : '1s'
+                })
+                $('.ps9').css({transform: 'scale(1)'})
+           })
         })
     </script>
     <script>
@@ -66,7 +77,9 @@
         function event2 (){
             window.open("./img/제주꿀감귤상세페이지.jpg",'_blank');
         }
-     
+        function event3(){
+            window.open('./img/설렁탕상세페이지.jpg','_blank');
+        }
         </script>
     <style>
         * {
@@ -177,7 +190,7 @@
         }
 
         .left {
-            width: 40%;
+            width: 30%;
             height: 913px;
             position: relative;
         }
@@ -194,10 +207,11 @@
 
         .img img {
             max-width: 100%;
+            margin-left: 90px;
         }
 
         .right {
-            width: 60%;
+            width: 70%;
             height: 913px;
             display: flex;
             flex-flow: row wrap;
@@ -259,7 +273,7 @@
 
         .content3>h2 {
             margin-top: 100px;
-            margin-left: 30px;
+            margin-left: 50px;
         }
 
         .content3>ul {
@@ -292,7 +306,7 @@
 
         .content4>h2 {
             margin-top: 100px;
-            margin-left: 30px;
+            margin-left: 50px;
             
         }
 
@@ -382,6 +396,27 @@
             height: 100px;
             line-height: 100px;
             font-size: 30px;
+        }
+        .ps8 {
+            width: 100%;
+            height: 800px;
+            background: url(./img/설렁탕상세페이지.jpg);
+            background-size: cover;
+            border-radius: 50px;
+        }
+        .ps9 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            margin-left: -200px;
+            margin-top: -50px;
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            cursor: pointer;
         }
         .ps5 {
             width: 100%;
@@ -518,6 +553,7 @@
         .img img {
            width: 150px;
            height: 180px;
+           margin-left: 0;
         }
 
         .right {
@@ -624,6 +660,11 @@
             display: block;
             cursor: pointer;
         }
+        #box3 {
+            width: 100%;
+            height: 540px;
+            border-radius: 50px;
+        }
         .ps7 {
             width: 100%;
             text-align: center;
@@ -631,6 +672,27 @@
             line-height: 40px;
             font-size: 20px;
             margin-top: 50px;
+        }
+        .ps8 {
+            width: 100%;
+            height: 500px;
+            background: url('./img/설렁탕상세페이지.jpg');
+            background-size: cover;
+            border-radius: 50px;
+        }
+        .ps9 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            margin-left: -200px;
+            margin-top: -50px;
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            cursor: pointer;
         }
         }
     </style>
@@ -671,7 +733,7 @@
                 <h2>Education</h2>
                 <ul>
                     <li><a href="#none"><b>2024.11~현재</b> 더조은컴퓨터학원 웹퍼블리셔 이수 중</a></li>
-                    <li><a href="#none"><b>2024.06~07</b> 이젠컴퓨터학원 포토샵,일러스트 이수 완료</a></li>
+                    <li><a href="#none"><b>2024.06~07</b> 이젠컴퓨터학원 포토샵,일러스트 이수</a></li>
                     <li><a href="#none"><b>2016~2018</b> 군산대학교 식품생명공학과 편입,졸업</a></li>
                     <li><a href="#none"><b>2014.02</b> 우석대학교 식품생명공학과 입학</a></li>
                 </ul>
@@ -720,7 +782,7 @@
             </div>
 
             <div id="box3" onclick="event3()">
-                <div class="ps7"><h3>JEJU MANDARIN</h3></div>
+                <div class="ps7"><h3>CJ food</h3></div>
                 <div class="ps8"></div>
                 <div class="ps9"><span>Click</span></div>
             </div>
